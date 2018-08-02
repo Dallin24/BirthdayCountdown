@@ -1,0 +1,33 @@
+.change-date {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    justify-self: start;
+
+    font-size: 24px;
+    line-height: 19px;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    color: $color-grey-two;
+    font-weight: 100;
+
+    background-color: transparent;
+    border: none;
+
+    transform: translate(-90px, 100px) rotate(-72deg);
+    width: 180px;
+    height: 15px;
+
+    &:focus {
+        outline: none;
+    }
+    i {
+        margin-right: 15px;
+    }
+    &:hover {
+        cursor: pointer;
+        color: #F5C822;
+    }
+    &:active {
+        color: #DFB51F;
+    }
+}

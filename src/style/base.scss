@@ -1,0 +1,43 @@
+$color-blue-one: #5496e6;
+$color-blue-two: #518bde;
+$color-grey-one: #444;
+$color-yellow-one: #f7d754;
+$color-grey-two: #d8d8d8;
+
+.grid {
+    height: 100vh;
+    width: 100vw;
+    
+    display: grid;
+    grid-template-rows: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(10, minmax(120px, 1fr));
+
+    &__title {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        
+        justify-self: center;
+        //align-self: center;
+
+        font-size: 20px;
+        color: white;
+        font-family: "Montserrat";
+        font-weight: 300;
+        line-height: 22px;
+        padding: 55px 75px;
+    }
+
+    &__remaining {
+        grid-row: 4/-1;
+        grid-column: 1/-1;
+
+        text-align: center;
+        margin-top: 33px;
+
+        color: $color-grey-one;
+        font-family: 'Montserrat';
+        font-size: 22px;
+        font-weight: 300;
+
+    }
+}
